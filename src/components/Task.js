@@ -20,7 +20,7 @@ function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
       </label>
 
       <div className="title">
-        <input type="text" value={title} readonly placehodler="Input title" />
+        <input type="text" value={title} readOnly placehodler="Input title" />
       </div>
 
       <div className="actions" onClick={(event) => event.stopPropagation()}>
@@ -30,7 +30,7 @@ function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
             <span
               className={`icon-star`}
               id={`pinTask-${id}`}
-              aria-lable={`pinTask-${id}`}
+              aria-label={`pinTask-${id}`}
             />
           </a>
         )}
