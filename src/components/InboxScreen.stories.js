@@ -25,7 +25,7 @@ Default.parameters = {
   msw: {
     handlers: [
       rest.get(
-        "https://jsonplaceholder.typicode.com/todos?userId=1",
+        "https://jsonplaceholder.typicode.com/todos",
         (req, res, ctx) => {
           return res(ctx.json(MockedState.tasks));
         }
@@ -55,7 +55,7 @@ Error.parameters = {
   msw: {
     handlers: [
       rest.get(
-        "https://jsonplaceholder.typicode.com/todos?userId=1",
+        "https://jsonplaceholder.typicode.com/todos",
         (req, res, ctx) => {
           return res(ctx.status(403));
         }
