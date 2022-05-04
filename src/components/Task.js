@@ -20,7 +20,13 @@ function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
       </label>
 
       <div className="title">
-        <input type="text" value={title} readOnly placehodler="Input title" />
+        <input
+          type="text"
+          value={title}
+          readOnly
+          placeholder="Input title"
+          style={{ background: "red" }}
+        />
       </div>
 
       <div className="actions" onClick={(event) => event.stopPropagation()}>
